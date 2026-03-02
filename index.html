@@ -28,6 +28,11 @@ const App = () => {
   const [selectedPackage, setSelectedPackage] = useState(null);
   const [activeImage, setActiveImage] = useState(null);
   const [showFAB, setShowFAB] = useState(false);
+  // vite.config.js
+export default {
+  base: '/shark/', // https://milw0rm84-hub.github.io/shark/
+}
+
 
   // For touch swipe handling in modal
   const touchStart = useRef(null);
